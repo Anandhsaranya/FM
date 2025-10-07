@@ -65,13 +65,41 @@ MODEL GRAPH:
 
 
 Program
+Am=2.5;
+fm=144;
+Ac=5;
+fc=1440;
+fs=14400;
+t = 0:1/fs:2/fm;
+wm = 2*3.14*fm;
+wc = 2*3.14*fc;
+m1 = Am * cos(wm*t); 
+subplot(4,1,1);
+plot(t,m1);
+c1 = Ac * cos(wc*t);                  
+m2 = Am * cos(1.57 - wm*t); 
+c2 = Ac * cos(1.57 - wc*t); 
+subplot(4,1,2);
+plot(t,c2);
+s1 = c1 .* m1;
+s2 = c2 .* m2;
+Susb = s1 - s2;
+subplot(4,1,3);
+plot(t,Susb);
+Slsb = s1 + s2;
+subplot(4,1,4);
+plot(t,Slsb);
 
 
 Output Waveform
+<img width="1920" height="1080" alt="Screenshot (116)" src="https://github.com/user-attachments/assets/1c3c57ed-edbf-4716-b196-ce87372a3eef" />
 
 
 
 Tabulation
+![exp_3 tab](https://github.com/user-attachments/assets/1e8d043d-c5a7-479b-a130-83df93937421)
+
+
 
 
 

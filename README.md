@@ -90,7 +90,8 @@ Output Waveform
 
 
 Tabulation
-![Fm modulator](https://github.com/user-attachments/assets/1573c74c-b7aa-4562-9cb2-147769272573)
+
+![FM](https://github.com/user-attachments/assets/7d994a22-02c0-4a5d-8d85-ae4f74118b93)
 
 
 
@@ -101,11 +102,11 @@ Calculation
 
 
 
-Frequency Deviation Practical = 
+Frequency Deviation Practical = 3.4
 
-Modulation Index Practical	= 
+Modulation Index Practical	= 2.7
 
-Modulation Index Theoretical	=
+Modulation Index Theoretical	= 3.2
 
 
 
